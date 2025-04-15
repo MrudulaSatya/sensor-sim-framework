@@ -1,4 +1,6 @@
 # Embedded Sensor Simulation Framework (Learning Project)
+![Build With CMake](https://img.shields.io/badge/build%20system-CMake-blue.svg)
+![Tested with GoogleTest](https://img.shields.io/badge/tested-GoogleTest-green.svg)
 
 This is a modular C++ firmware simulation project created to learn and practice:
 - CMake (build system)
