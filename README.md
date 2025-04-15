@@ -23,7 +23,7 @@ mkdir build && cd build
 cmake ..
 make
 ctest
-
+```
 ## Note
 
 This is a self-initiated learning project created by Mrudula Y to explore software testing, build systems, and embedded-style modular design using C++. It is not used in production systems.
