@@ -14,15 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install -y cmake g++
-
-      - name: Configure CMake project
-        run: cmake -S . -B build
-
-      - name: Build project
-        run: cmake --build build
-
-      - name: Run unit tests
-        run: ctest --test-dir build --output-on-failure
-
+      - name: Build and Run Docker container
+        run: |
+             docker build -t sensor-sim-img .
+             docker run --rm sensor-sim-img
